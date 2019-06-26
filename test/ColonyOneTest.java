@@ -11,7 +11,7 @@ public class ColonyOneTest {
 	ColonyOne first = new ColonyOne();
 
 	@Test
-	void testGetCount() {
+	public void testGetCount() {
 		System.out.println("Expected: 15839");
 		System.out.println("Found:    " + first.getCount());
 		
@@ -19,7 +19,7 @@ public class ColonyOneTest {
 	}
 
 	@Test
-	void testGetName() {
+	public void testGetName() {
 		System.out.println("Expected: The 1583 Musketeers");
 		System.out.println("Found:    " + first.getName());
 		
