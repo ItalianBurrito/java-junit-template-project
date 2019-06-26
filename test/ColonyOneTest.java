@@ -1,0 +1,29 @@
+
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import uk.co.placona.helloWorld.ColonyOne;
+
+public class ColonyOneTest {
+	
+	ColonyOne first = new ColonyOne();
+
+	@Test
+	void testGetCount() {
+		System.out.println("Expected: 15839");
+		System.out.println("Found:    " + first.getCount());
+		
+		assertEquals(15839, first.getCount());
+	}
+
+	@Test
+	void testGetName() {
+		System.out.println("Expected: The 1583 Musketeers");
+		System.out.println("Found:    " + first.getName());
+		
+		assertEquals("The 1583 Musketeers", first.getName());
+	}
+
+}
