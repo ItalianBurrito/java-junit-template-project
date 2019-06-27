@@ -12,10 +12,10 @@ public class ColonyOneTest {
 
 	@Test
 	public void testGetCount() {
-		System.out.println("Expected: 15839");
+		System.out.println("Expected: 1583");
 		System.out.println("Found:    " + first.getCount());
 		
-		assertEquals(15839, first.getCount());
+		assertEquals(1583, first.getCount());
 	}
 
 	@Test
