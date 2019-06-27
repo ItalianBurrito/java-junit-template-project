@@ -5,8 +5,5 @@ script:
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 154.5.3.58\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh Eric@154.5.3.58
-  
-  
-after_script:
   - docker start oracletest-ee
   - ant test
