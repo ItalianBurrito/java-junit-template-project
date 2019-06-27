@@ -1,5 +1,8 @@
 language: java
 
+ before_script:  
+  - echo -e "Host 154.5.3.58\n\tHostName 154.5.3.58\n\tUser Eric\n\tIdentityFile ~/.ssh/id_rsa\n" >> ~/.ssh/config
+  
 script:
   - echo -n $id_rsa >> ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
