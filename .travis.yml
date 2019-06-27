@@ -6,8 +6,7 @@ script:
   - echo -e "Host 154.5.3.58\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh Eric@154.5.3.58 <<DoinStuff
     docker start oracletest-ee;
-    sleep 5;
+    sleep 10;
     docker container ls;
-    exit;
     DoinStuff
   - ant test
