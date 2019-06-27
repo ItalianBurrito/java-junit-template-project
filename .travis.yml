@@ -7,6 +7,6 @@ script:
   - ssh Eric@154.5.3.58 <<DoinStuff
      docker start oracletest-ee;
      sleep 10;
-     docker container ls;>
+     docker container logs oracletest-ee;>
     DoinStuff
   - ant test
