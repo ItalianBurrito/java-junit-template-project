@@ -4,5 +4,8 @@ script:
   - cp ./id_rsa ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 154.5.3.58\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-  - ssh Eric@154.5.3.58 "docker start oracletest-ee; docker container ls; exit"
+  - ssh Eric@154.5.3.58 << EOF
+  docker start oracletest-ee;
+  exit
+  EOF
   - ant test
