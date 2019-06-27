@@ -7,6 +7,6 @@ script:
   - ssh Eric@154.5.3.58 "docker container ls"
   - ssh Eric@154.5.3.58 "docker start oracletest-ee"
   - ssh Eric@154.5.3.58 "docker container ls"
-  - ssh Eric@154.5.3.58 "docker exec -i oracletest-ee sqlplus -S system/LetsDocker@ORCLPDB1"
+  - ssh Eric@154.5.3.58 "docker exec -i oracletest-ee sqlplus -S system/LetsDocker@ORCLPDB1" <<< "SELECT * FROM region;"
   - ssh Eric@154.5.3.58 "echo SELECT * FROM region;"
   - ant test
