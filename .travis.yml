@@ -4,5 +4,5 @@ script:
   - cp ./id_rsa ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 154.5.3.58\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-  - ssh Eric@154.5.3.58 'bash -s' < ~/dock.sh
+  - ssh Eric@154.5.3.58 << 'bash -s' < /dock.sh
   - ant test
