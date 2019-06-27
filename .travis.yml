@@ -6,5 +6,6 @@ script:
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh Eric@154.5.3.58
+  - yes
   - docker start oracletest-ee
   - ant test
