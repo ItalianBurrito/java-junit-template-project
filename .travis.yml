@@ -7,6 +7,6 @@ script:
   - ssh Eric@154.5.3.58
   
   
-after_script
+after_script:
   - docker start oracletest-ee
   - ant test
