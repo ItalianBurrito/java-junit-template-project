@@ -9,5 +9,5 @@ script:
     ping 127.0.0.1 -n 6 > nul;
     docker container ls;
     exit;
-  DoinStuff
+    DoinStuff
   - ant test
