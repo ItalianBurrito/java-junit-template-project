@@ -7,5 +7,6 @@ script:
   - ssh Eric@154.5.3.58 "docker container ls"
   - ssh Eric@154.5.3.58 "docker start oracletest-ee"
   - ssh Eric@154.5.3.58 "docker container ls"
+  - sleep 10
   - ssh Eric@154.5.3.58 "docker exec -i oracletest-ee sqlplus -S system/LetsDocker@ORCLPDB1" <<< "SELECT O_TOTALPRICE, R_NAME FROM orders, region WHERE O_CUSTKEY = 493;"
   - ant test
