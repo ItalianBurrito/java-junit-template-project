@@ -6,7 +6,7 @@ public class ColonyOne {
 	private String colonyName = "";
 	
 	public ColonyOne() {
-		colonyName = "The 1583 Musketeer";
+		colonyName = "The 1583 Musketeers";
 	}
 	
 	public int getCount() {
